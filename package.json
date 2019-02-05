@@ -1,8 +1,8 @@
 {
   "name": "brain-games_mygame",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "my first project-game",
+  "main": "dist/index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
@@ -14,8 +14,13 @@
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
-  "author": "",
+  "author": "valyaevadaria",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valyaevadaria/project-lvl1-s438/issues",
+    "email": "valyaevadaria@gmail.com"
+  },
+  "homepage": "https://github.com/valyaevadaria/project-lvl1-s438/blob/master/README.md",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
