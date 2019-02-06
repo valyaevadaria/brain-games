@@ -1,6 +1,6 @@
 {
   "name": "brain-games_mygame",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "my first project-game",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
@@ -27,6 +27,10 @@
     "@babel/preset-env": "^7.3.1"
   },
   "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
     "readline-sync": "^1.4.9"
   }
 }
