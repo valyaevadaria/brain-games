@@ -11,7 +11,8 @@
 
     make install brain-games_mygame
 
-#Run
+# Run
 
 The game to determine even and odd numbers:
+
     brain-even
