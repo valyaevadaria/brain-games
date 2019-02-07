@@ -1,6 +1,6 @@
 {
   "name": "brain-games_mygame",
-  "version": "1.0.8",
+  "version": "1.0.12",
   "description": "my first project-game",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
