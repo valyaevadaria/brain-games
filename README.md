@@ -3,15 +3,16 @@
 
 # nodejs-package
 
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" /></a>
-[![Build Status](https://travis-ci.org/travis-ci/travis-web.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
+<a href="https://codeclimate.com/github/valyaevadaria/project-lvl1-s438/maintainability"><img src="https://api.codeclimate.com/v1/badges/c8c0e4a2befbe055db77/maintainability" /></a>
+<a href="https://codeclimate.com/github/valyaevadaria/project-lvl1-s438/test_coverage"><img src="https://api.codeclimate.com/v1/badges/c8c0e4a2befbe055db77/test_coverage" /></a>
+[![Build Status](https://travis-ci.org/valyaevadaria/project-lvl1-s438.svg?branch=master)](https://travis-ci.org/valyaevadaria/project-lvl1-s438)
 
 # Setup
 
     make install brain-games_mygame
 
-#Run
+# Run
 
 The game to determine even and odd numbers:
+
     brain-even

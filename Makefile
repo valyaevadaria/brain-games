@@ -8,4 +8,4 @@ publish:
 	npm publish
 
 lint:
-	npx eslint
+	eslint src/index.js
