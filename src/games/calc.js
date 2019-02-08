@@ -1,4 +1,4 @@
-import { makePair } from '../func/make-pair';
+import { makePair } from '../document/make-pair';
 
 const brainCalc = () => {
   const numberFirst = Math.round(Math.random() * 100);
