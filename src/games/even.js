@@ -1,11 +1,14 @@
-import { makePair } from '../document/make-pair';
+import startGame from '..';
+import { cons } from '../make-pair';
+import getRandomNumber from './utils';
 
 const isEven = number => (number % 2 === 0);
 
 const brainEven = () => {
-  const numberForQuewstion = Math.round(Math.random() * 100);
+  const startMessage = 'Answer "yes" if number even otherwise answer "no".';
+  const numberForQuewstion = getRandomNumber();
   const correctAnswer = isEven(numberForQuewstion) ? 'yes' : 'no';
-  return makePair(numberForQuewstion, correctAnswer);
+  return cons(startMessage, cons(numberForQuewstion, correctAnswer));
 };
 
-export default brainEven;
+export default () => startGame(brainEven);

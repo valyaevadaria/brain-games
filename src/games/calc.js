@@ -1,24 +1,33 @@
-import { makePair } from '../document/make-pair';
+import startGame from '..';
+import { cons } from '../make-pair';
+import getRandomNumber from './utils';
 
 const brainCalc = () => {
-  const numberFirst = Math.round(Math.random() * 100);
-  const numberSecond = Math.round(Math.random() * 100);
-  const operation = Math.round(Math.random() * 10);
+  const startMessage = 'What is the result of the expression?';
+  const numberFirst = getRandomNumber();
+  const numberSecond = getRandomNumber();
+  const operation = Math.round((Math.random() * 2) + 1);
   let correctAnswer;
-  let iconOperation;
+  let operationIcon;
 
-  if (operation <= 3) {
-    iconOperation = '+';
-    correctAnswer = numberFirst + numberSecond;
-  } else if (operation > 3 && operation <= 7) {
-    iconOperation = '-';
-    correctAnswer = numberFirst - numberSecond;
-  } else {
-    iconOperation = '*';
-    correctAnswer = numberFirst * numberSecond;
+  switch (operation) {
+    case 1:
+      operationIcon = '+';
+      correctAnswer = numberFirst + numberSecond;
+      break;
+    case 2:
+      operationIcon = '-';
+      correctAnswer = numberFirst - numberSecond;
+      break;
+    case 3:
+      operationIcon = '*';
+      correctAnswer = numberFirst * numberSecond;
+      break;
+    default:
+      break;
   }
 
-  return makePair(`${numberFirst} ${iconOperation} ${numberSecond}`, `${correctAnswer}`);
+  return cons(startMessage, cons(`${numberFirst} ${operationIcon} ${numberSecond}`, `${correctAnswer}`));
 };
 
-export default brainCalc;
+export default () => startGame(brainCalc);
