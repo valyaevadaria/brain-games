@@ -15,11 +15,8 @@
 
 The game to determine even and odd numbers:
 
-<<<<<<< HEAD
     brain-even
-=======
-    brain-even
->>>>>>> 23c29f046daa5b69233f09f1b439c3bc30ac3f37
+
 The game of calculating the value of the expession
 
     brain-calc
