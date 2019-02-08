@@ -1,5 +1,6 @@
-import isEven from '../func/iseven';
-import { makePair } from '../func/make-pair';
+import { makePair } from '../document/make-pair';
+
+const isEven = number => (number % 2 === 0);
 
 const brainEven = () => {
   const numberForQuewstion = Math.round(Math.random() * 100);
