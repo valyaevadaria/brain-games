@@ -20,3 +20,7 @@ The game to determine even and odd numbers:
 The game of calculating the value of the expession
 
     brain-calc
+
+The game finding the greatest common divisor
+
+    brain-gcd
