@@ -2,4 +2,4 @@
 
 import brainEven from '..';
 
-brainEven();
+brainEven('brain-even');
