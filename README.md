@@ -13,7 +13,7 @@
 
 # Run
 
-The game to determine even and odd numbers:
+The game to determine even and odd numbers
 
     brain-even
 
@@ -28,3 +28,7 @@ The game finding the greatest common divisor
 The game finding the number of the progression
 
     brain-progression
+
+The game to determine prime numbers
+
+    brain-prime
