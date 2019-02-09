@@ -9,9 +9,9 @@ const getGCD = (num1, num2) => {
     return num1;
   }
 
-  const maxNum = num1 > num2 ? num1 : num2;
+  const mixNum = num1 > num2 ? num2 : num1;
   const iter = (divider, maxDivider) => {
-    if (divider > maxNum) {
+    if (divider > mixNum) {
       return maxDivider;
     }
     if (num1 % divider === 0 && num2 % divider === 0) {
