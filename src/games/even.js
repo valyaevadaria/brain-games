@@ -1,6 +1,6 @@
 import startGame from '..';
 import { cons } from '../make-pair';
-import getRandomNumber from './utils';
+import getRandomNumber from '../utils';
 
 const isEven = number => (number % 2 === 0);
 
@@ -12,4 +12,4 @@ const brainEven = () => {
   return cons(numberForQuewstion, correctAnswer);
 };
 
-export default () => startGame(startMessage, brainEven);
+export default () => startGame(startMessage, brainEven, 3);

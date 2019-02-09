@@ -1,6 +1,6 @@
 import startGame from '..';
 import { cons } from '../make-pair';
-import getRandomNumber from './utils';
+import getRandomNumber from '../utils';
 
 const getGCD = (num1, num2) => {
   if (num1 === 1 || num2 === 1) {
@@ -31,4 +31,4 @@ const brainGCD = () => {
   return cons(`${numberFirst} ${numberSecond}`, `${correctAnswer}`);
 };
 
-export default () => startGame(startMessage, brainGCD);
+export default () => startGame(startMessage, brainGCD, 3);
