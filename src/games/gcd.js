@@ -1,5 +1,5 @@
 import startGame from '..';
-import { cons } from '../make-pair';
+import { cons } from 'hexlet-pairs';
 import getRandomNumber from '../utils';
 
 const getGCD = (num1, num2) => {
@@ -27,8 +27,9 @@ const startMessage = 'Find the greatest common divisor of given numbers.';
 const brainGCD = () => {
   const numberFirst = getRandomNumber(100);
   const numberSecond = getRandomNumber(100);
-  const correctAnswer = getGCD(numberFirst, numberSecond);
-  return cons(`${numberFirst} ${numberSecond}`, `${correctAnswer}`);
+  const question = `${numberFirst} ${numberSecond}`;
+  const answer = getGCD(numberFirst, numberSecond);
+  return cons(question, `${answer}`);
 };
 
 export default () => startGame(startMessage, brainGCD, 3);

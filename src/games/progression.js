@@ -1,5 +1,5 @@
 import startGame from '..';
-import { cons, car, cdr } from '../make-pair';
+import { cons, car, cdr } from 'hexlet-pairs';
 import getRandomNumber from '../utils';
 
 const getProgression = (start, countOfNum) => {
@@ -25,9 +25,9 @@ const brainProgression = () => {
   const countOfNumbers = 10;
 
   const data = getProgression(startValue, countOfNumbers);
-  const progression = car(data);
-  const correctAnswer = cdr(data);
-  return cons(progression, `${correctAnswer}`);
+  const question = car(data);
+  const answer = cdr(data);
+  return cons(question, `${answer}`);
 };
 
 export default () => startGame(startMessage, brainProgression, 3);

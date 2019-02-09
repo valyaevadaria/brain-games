@@ -1,5 +1,5 @@
 import startGame from '..';
-import { cons } from '../make-pair';
+import { cons } from 'hexlet-pairs';
 import getRandomNumber from '../utils';
 
 const isEven = number => (number % 2 === 0);
@@ -7,9 +7,9 @@ const isEven = number => (number % 2 === 0);
 const startMessage = 'Answer "yes" if number even otherwise answer "no".';
 
 const brainEven = () => {
-  const numberForQuewstion = getRandomNumber(100);
-  const correctAnswer = isEven(numberForQuewstion) ? 'yes' : 'no';
-  return cons(numberForQuewstion, correctAnswer);
+  const quewstion = getRandomNumber(100);
+  const answer = isEven(quewstion) ? 'yes' : 'no';
+  return cons(quewstion, answer);
 };
 
 export default () => startGame(startMessage, brainEven, 3);
