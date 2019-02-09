@@ -4,11 +4,12 @@ import getRandomNumber from './utils';
 
 const isEven = number => (number % 2 === 0);
 
+const startMessage = 'Answer "yes" if number even otherwise answer "no".';
+
 const brainEven = () => {
-  const startMessage = 'Answer "yes" if number even otherwise answer "no".';
-  const numberForQuewstion = getRandomNumber();
+  const numberForQuewstion = getRandomNumber(100);
   const correctAnswer = isEven(numberForQuewstion) ? 'yes' : 'no';
-  return cons(startMessage, cons(numberForQuewstion, correctAnswer));
+  return cons(numberForQuewstion, correctAnswer);
 };
 
-export default () => startGame(brainEven);
+export default () => startGame(startMessage, brainEven);

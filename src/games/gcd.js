@@ -22,12 +22,13 @@ const getGCD = (num1, num2) => {
   return iter(1, 1);
 };
 
+const startMessage = 'Find the greatest common divisor of given numbers.';
+
 const brainGCD = () => {
-  const startMessage = 'Find the greatest common divisor of given numbers.';
-  const numberFirst = getRandomNumber();
-  const numberSecond = getRandomNumber();
+  const numberFirst = getRandomNumber(100);
+  const numberSecond = getRandomNumber(100);
   const correctAnswer = getGCD(numberFirst, numberSecond);
-  return cons(startMessage, cons(`${numberFirst} ${numberSecond}`, `${correctAnswer}`));
+  return cons(`${numberFirst} ${numberSecond}`, `${correctAnswer}`);
 };
 
-export default () => startGame(brainGCD);
+export default () => startGame(startMessage, brainGCD);

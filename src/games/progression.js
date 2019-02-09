@@ -16,15 +16,16 @@ const getProgression = (start, step) => {
   return iter(start + step, `${start}`, 1);
 };
 
+const startMessage = 'What number is missing in the progression?';
+
 const brainProgression = () => {
-  const startMessage = 'What number is missing in the progression?';
-  const startProgression = getRandomNumber();
-  const stepProgression = getRandomNumber() + 1;
+  const startProgression = getRandomNumber(100);
+  const stepProgression = getRandomNumber(100) + 1;
 
   const dataProgression = getProgression(startProgression, stepProgression);
   const progression = car(dataProgression);
   const correctAnswer = cdr(dataProgression);
-  return cons(startMessage, cons(progression, `${correctAnswer}`));
+  return cons(progression, `${correctAnswer}`);
 };
 
-export default () => startGame(brainProgression);
+export default () => startGame(startMessage, brainProgression);

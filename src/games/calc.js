@@ -2,11 +2,12 @@ import startGame from '..';
 import { cons } from '../make-pair';
 import getRandomNumber from './utils';
 
+const startMessage = 'What is the result of the expression?';
+
 const brainCalc = () => {
-  const startMessage = 'What is the result of the expression?';
-  const numberFirst = getRandomNumber();
-  const numberSecond = getRandomNumber();
-  const operation = Math.round((Math.random() * 2) + 1);
+  const numberFirst = getRandomNumber(100);
+  const numberSecond = getRandomNumber(100);
+  const operation = getRandomNumber(2) + 1;
   let correctAnswer;
   let operationIcon;
 
@@ -27,7 +28,8 @@ const brainCalc = () => {
       break;
   }
 
-  return cons(startMessage, cons(`${numberFirst} ${operationIcon} ${numberSecond}`, `${correctAnswer}`));
+  const mathExpression = `${numberFirst} ${operationIcon} ${numberSecond}`;
+  return cons(mathExpression, `${correctAnswer}`);
 };
 
-export default () => startGame(brainCalc);
+export default () => startGame(startMessage, brainCalc);

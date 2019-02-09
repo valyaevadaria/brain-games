@@ -1,9 +1,9 @@
 import readlineSynk from 'readline-sync';
 import { car, cdr } from './make-pair';
 
-export default (game) => {
+export default (message, game) => {
   console.log('Welcome to the Brain Games!');
-  console.log(car(game()));
+  console.log(message);
 
   const name = readlineSynk.question('May I have your name? ');
   console.log(`Hello, ${name}`);
@@ -12,7 +12,7 @@ export default (game) => {
     if (raundOfGame === 4) {
       console.log(`Congratulations, ${name}!`);
     } else {
-      const getDataForRaund = cdr(game());
+      const getDataForRaund = game();
       const meanForQuestion = car(getDataForRaund);
       const correctAnswer = cdr(getDataForRaund);
 
