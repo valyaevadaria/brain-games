@@ -24,3 +24,7 @@ The game of calculating the value of the expession
 The game finding the greatest common divisor
 
     brain-gcd
+
+The game finding the number of the progression
+
+    brain-progression
