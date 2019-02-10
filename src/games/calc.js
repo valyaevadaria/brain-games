@@ -7,7 +7,7 @@ const startMessage = 'What is the result of the expression?';
 const brainCalc = () => {
   const numberFirst = getRandomNumber(100);
   const numberSecond = getRandomNumber(100);
-  const operation = getRandomNumber(2, 1);
+  const operation = getRandomNumber(3);
   let answer;
   let operationIcon;
 

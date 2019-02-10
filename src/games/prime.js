@@ -7,7 +7,7 @@ const isPrime = (number) => {
     return false;
   }
   const iter = (divider) => {
-    if (divider === number) {
+    if (divider > Math.sqrt(number)) {
       return true;
     }
     if (number % divider === 0) {

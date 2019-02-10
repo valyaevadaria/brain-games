@@ -4,27 +4,29 @@ import getRandomNumber from '../utils';
 
 const startMessage = 'What number is missing in the progression?';
 const countOfNumbers = 10;
-let answer;
 
-const getProgression = (start, empty) => {
-  const iter = (num, list, count) => {
+
+const getProgression = (start, step, empty) => {
+  const iter = (list, count) => {
     if (count === countOfNumbers) {
       return list;
     }
-    const nextNumber = num + start * count;
+    const nextNumber = start + step * count;
     if (count === empty) {
-      answer = nextNumber;
-      return iter(nextNumber, `${list} ..`, count + 1, nextNumber);
+      return iter(`${list} ..`, count + 1);
     }
-    return iter(nextNumber, `${list} ${nextNumber}`, count + 1);
+    return iter(`${list} ${nextNumber}`, count + 1);
   };
-  return iter(start, `${start}`, 1);
+  return iter(`${start}`, 1);
 };
 
 const brainProgression = () => {
   const startValue = getRandomNumber(100);
-  const emptyPosition = getRandomNumber(9, 1);
-  const question = getProgression(startValue, emptyPosition);
+  const difference = getRandomNumber(100);
+  const emptyPosition = getRandomNumber(countOfNumbers);
+
+  const question = getProgression(startValue, difference, emptyPosition);
+  const answer = startValue + difference * emptyPosition;
   return cons(question, `${answer}`);
 };
 

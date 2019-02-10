@@ -6,6 +6,3 @@ start:
 
 publish:
 	npm publish
-
-lint:
-	eslint src/index.js
