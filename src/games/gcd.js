@@ -32,4 +32,4 @@ const brainGCD = () => {
   return cons(question, `${answer}`);
 };
 
-export default () => startGame(startMessage, brainGCD, 3);
+export default () => startGame(startMessage, brainGCD);

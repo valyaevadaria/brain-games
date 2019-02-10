@@ -7,10 +7,11 @@ const isPrime = (number) => {
     return false;
   }
   const iter = (divider) => {
-    if (number % divider === 0 && divider < number) {
-      return false;
-    } if (divider === number) {
+    if (divider === number) {
       return true;
+    }
+    if (number % divider === 0) {
+      return false;
     }
     return iter(divider + 1);
   };
@@ -25,4 +26,4 @@ const brainPrime = () => {
   return cons(question, answer);
 };
 
-export default () => startGame(startMessage, brainPrime, 3);
+export default () => startGame(startMessage, brainPrime);

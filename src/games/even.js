@@ -12,4 +12,4 @@ const brainEven = () => {
   return cons(question, answer);
 };
 
-export default () => startGame(startMessage, brainEven, 3);
+export default () => startGame(startMessage, brainEven);

@@ -32,4 +32,4 @@ const brainCalc = () => {
   return cons(question, `${answer}`);
 };
 
-export default () => startGame(startMessage, brainCalc, 3);
+export default () => startGame(startMessage, brainCalc);

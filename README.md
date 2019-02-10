@@ -9,7 +9,7 @@
 
 # Setup
 
-    make install brain-games_mygame
+   sudo make install -g brain-games_mygame
 
 # Run
 
