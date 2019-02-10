@@ -12,7 +12,7 @@ The game to determine even and odd numbers
 
     brain-even
 
-Example: hhttps://asciinema.org/a/Fndlz5tAWfALh5Uq3mUUH4H1s
+Example: https://asciinema.org/a/Fndlz5tAWfALh5Uq3mUUH4H1s
 
 The game of calculating the value of the expession
 
