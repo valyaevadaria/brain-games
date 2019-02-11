@@ -10,7 +10,7 @@ export default (message, game) => {
   const name = readlineSynk.question('May I have your name? ');
   console.log(`Hello, ${name}`);
 
-   const iter = (raundOfGame) => {
+  const iter = (raundOfGame) => {
     if (raundOfGame > countOfRaunds) {
       console.log(`Congratulations, ${name}!`);
       return;
@@ -28,5 +28,6 @@ export default (message, game) => {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
     }
+  };
   iter(1);
 };
